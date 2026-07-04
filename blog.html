@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог — NextGen AI</title>
+  <meta name="description" content="Полезные статьи об автоматизации бизнеса, разработке Telegram-ботов, парсинге данных и внедрении нейросетей.">
+  <meta name="google-site-verification" content="5R5VbEmm2n74LcDH_hMLKXL2e5o9t02qzC8g4OUq7aQ">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======== ПРЕЛОАДЕР ======== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__logo">N</div>
+    <div class="preloader__bar"><div class="preloader__bar-fill"></div></div>
+  </div>
+
+  <!-- ======== ХЕДЕР ======== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">N</div>
+        <div>Next<span>Gen</span></div>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Главная</a></li>
+          <li><a href="services.html" class="nav__link">Услуги</a></li>
+          <li><a href="portfolio.html" class="nav__link">Портфолио</a></li>
+          <li><a href="blog.html" class="nav__link nav__link--active">Блог</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======== ЗАГОЛОВОК СТРАНИЦЫ ======== -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Главная</a>
+        <span class="breadcrumbs__sep">/</span>
+        <span class="breadcrumbs__current">Блог</span>
+      </div>
+      <h1 class="page-header__title">Полезные статьи</h1>
+      <p class="page-header__desc">
+        Автоматизация, нейросети, парсинг и разработка — простыми словами о сложном.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======== СЕТКА СТАТЕЙ ======== -->
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid">
+        <!-- Статья 1 -->
+        <article class="blog-card animate-in animate-in--1">
+          <div class="blog-card__image blog-card__image--blue">📊</div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__date">📅 15 июня 2026</span>
+              <span>• 5 мин чтения</span>
+            </div>
+            <h2 class="blog-card__title">
+              <a href="#">Как парсинг данных экономит деньги бизнесу</a>
+            </h2>
+            <p class="blog-card__excerpt">
+              Разбираем реальные кейсы: мониторинг конкурентов, динамическое ценообразование
+              и автоматический сбор аналитики без бюджетных подрядчиков.
+            </p>
+            <a href="#" class="blog-card__link">Читать далее →</a>
+          </div>
+        </article>
+        <!-- Статья 2 -->
+        <article class="blog-card animate-in animate-in--2">
+          <div class="blog-card__image blog-card__image--purple">🤖</div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__date">📅 1 июня 2026</span>
+              <span>• 7 мин чтения</span>
+            </div>
+            <h2 class="blog-card__title">
+              <a href="#">Зачем вашему бренду Telegram-бот в 2026 году</a>
+            </h2>
+            <p class="blog-card__excerpt">
+              Тренды мессенджер-маркетинга: автоворонки продаж, персонализация через AI
+              и круглосуточная поддержка клиентов без найма операторов.
+            </p>
+            <a href="#" class="blog-card__link">Читать далее →</a>
+          </div>
+        </article>
+        <!-- Статья 3 -->
+        <article class="blog-card animate-in animate-in--3">
+          <div class="blog-card__image blog-card__image--cyan">🧠</div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__date">📅 20 мая 2026</span>
+              <span>• 6 мин чтения</span>
+            </div>
+            <h2 class="blog-card__title">
+              <a href="#">Нейросети в бизнесе: тренды 2026 года</a>
+            </h2>
+            <p class="blog-card__excerpt">
+              Какие AI-решения уже окупаются в малом и среднем бизнесе? Обзор топ-5
+              технологий, которые стоит внедрить прямо сейчас.
+            </p>
+            <a href="#" class="blog-card__link">Читать далее →</a>
+          </div>
+        </article>
+        <!-- Статья 4 -->
+        <article class="blog-card animate-in animate-in--4">
+          <div class="blog-card__image blog-card__image--indigo">🔍</div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__date">📅 5 мая 2026</span>
+              <span>• 4 мин чтения</span>
+            </div>
+            <h2 class="blog-card__title">
+              <a href="#">Как выбрать подрядчика по автоматизации</a>
+            </h2>
+            <p class="blog-card__excerpt">
+              Чек-лист: на что обратить внимание при выборе разработчика, чтобы не
+              потерять деньги и получить работающий продукт в срок.
+            </p>
+            <a href="#" class="blog-card__link">Читать далее →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== ФУТЕР ======== -->
+  <footer class="footer" id="consultation">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">N</div>
+            <div>Next<span>Gen</span></div>
+          </a>
+          <p class="footer__desc">
+            Агентство по автоматизации бизнеса и внедрению нейросетей.
+            Разработка ботов, парсеров и сайтов под ключ.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Навигация</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Главная</a></li>
+            <li><a href="services.html" class="footer__link">Услуги</a></li>
+            <li><a href="portfolio.html" class="footer__link">Портфолио</a></li>
+            <li><a href="blog.html" class="footer__link">Блог</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Контакты</h4>
+          <ul class="footer__links">
+            <li><span class="footer__link">info@nextgen-ai.ru</span></li>
+            <li><span class="footer__link">+7 (999) 123-45-67</span></li>
+            <li><span class="footer__link">Telegram: @nextgen_ai</span></li>
+          </ul>
+        </div>
+        <div class="footer-form">
+          <h4 class="footer-form__title">Получить бесплатную консультацию</h4>
+          <p class="footer-form__desc">Оставьте заявку — мы свяжемся в течение часа</p>
+          <form class="form" id="consult-form">
+            <div class="form__group">
+              <label class="form__label" for="name">Ваше имя</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Александр" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="phone">Телефон</label>
+              <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="service">Какая услуга интересует?</label>
+              <select class="form__select" id="service" name="service">
+                <option value="Telegram/WhatsApp бот">Telegram / WhatsApp бот</option>
+                <option value="Парсинг данных">Парсинг / Краулер</option>
+                <option value="Сайт под ключ">Сайт под ключ</option>
+                <option value="Другое">Другое</option>
+              </select>
+            </div>
+            <button class="btn btn--primary form__submit" type="submit">Отправить заявку</button>
+          </form>
+          <div class="form__success" id="form-success">
+            <div class="form__success-icon">✅</div>
+            <div class="form__success-title">Спасибо за заявку!</div>
+            <div class="form__success-text">Мы свяжемся с вами в ближайшее время.</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 NextGen AI. Все права защищены.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======== МОДАЛЬНОЕ ОКНО ======== -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <button class="modal__close" id="modal-close">✕</button>
+      <h3 class="modal__title">Заказ услуги</h3>
+      <p class="modal__desc">Заполните форму — мы свяжемся с вами в ближайшее время</p>
+      <form class="form" id="modal-form">
+        <div class="form__group">
+          <label class="form__label" for="modal-name">Ваше имя</label>
+          <input class="form__input" type="text" id="modal-name" placeholder="Александр" required>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="modal-phone">Телефон</label>
+          <input class="form__input" type="tel" id="modal-phone" placeholder="+7 (999) 123-45-67" required>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="modal-service">Услуга</label>
+          <select class="form__select" id="modal-service">
+            <option value="Telegram/WhatsApp бот">Telegram / WhatsApp бот</option>
+            <option value="Парсинг данных">Парсинг / Краулер</option>
+            <option value="Сайт под ключ">Сайт под ключ</option>
+            <option value="Комплексная автоматизация">Комплексная автоматизация</option>
+          </select>
+        </div>
+        <button class="btn btn--primary form__submit" type="submit">Отправить заявку</button>
+      </form>
+      <div class="form__success" id="modal-success">
+        <div class="form__success-icon">✅</div>
+        <div class="form__success-title">Спасибо за заявку!</div>
+        <div class="form__success-text">Мы свяжемся с вами в ближайшее время.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== КНОПКА НАВЕРХ ======== -->
+  <button class="scroll-top" id="scroll-top" aria-label="Наверх">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

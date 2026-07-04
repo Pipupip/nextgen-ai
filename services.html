@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Услуги — NextGen AI</title>
+  <meta name="description" content="Полный прайс-лист на разработку ботов, парсинг данных и создание сайтов от NextGen AI. Работаем под ключ.">
+  <meta name="google-site-verification" content="5R5VbEmm2n74LcDH_hMLKXL2e5o9t02qzC8g4OUq7aQ">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======== ПРЕЛОАДЕР ======== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__logo">N</div>
+    <div class="preloader__bar"><div class="preloader__bar-fill"></div></div>
+  </div>
+
+  <!-- ======== ХЕДЕР ======== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">N</div>
+        <div>Next<span>Gen</span></div>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Главная</a></li>
+          <li><a href="services.html" class="nav__link nav__link--active">Услуги</a></li>
+          <li><a href="portfolio.html" class="nav__link">Портфолио</a></li>
+          <li><a href="blog.html" class="nav__link">Блог</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======== ЗАГОЛОВОК СТРАНИЦЫ ======== -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Главная</a>
+        <span class="breadcrumbs__sep">/</span>
+        <span class="breadcrumbs__current">Услуги</span>
+      </div>
+      <h1 class="page-header__title">Наши услуги и цены</h1>
+      <p class="page-header__desc">
+        Прозрачные цены, фиксированные сроки и гарантия качества на каждый проект.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======== КАЛЬКУЛЯТОР СТОИМОСТИ ======== -->
+  <section class="section" style="padding-bottom: 0;">
+    <div class="container">
+      <div class="calculator reveal">
+        <h2 class="calculator__title">Калькулятор стоимости</h2>
+        <p class="calculator__desc">Выберите опции и узнайте примерную цену вашего проекта</p>
+        <div class="calculator__row">
+          <label class="calculator__label">Тип услуги</label>
+          <select class="calculator__select" id="calc-service">
+            <option value="15000">Telegram / WhatsApp бот — от 15 000 ₽</option>
+            <option value="25000">Парсинг / Краулер — от 25 000 ₽</option>
+            <option value="30000">Сайт под ключ — от 30 000 ₽</option>
+            <option value="60000">Комплексная автоматизация — от 60 000 ₽</option>
+          </select>
+        </div>
+        <div class="calculator__row">
+          <label class="calculator__label">Дополнительные опции</label>
+          <div class="calculator__options">
+            <label class="calculator__option">
+              <input type="checkbox" class="calc-option" data-price="5000">
+              <span class="calculator__option-text">Интеграция с CRM / 1С</span>
+              <span class="calculator__option-price">+5 000 ₽</span>
+            </label>
+            <label class="calculator__option">
+              <input type="checkbox" class="calc-option" data-price="3000">
+              <span class="calculator__option-text">Индивидуальный дизайн</span>
+              <span class="calculator__option-price">+3 000 ₽</span>
+            </label>
+            <label class="calculator__option">
+              <input type="checkbox" class="calc-option" data-price="5000">
+              <span class="calculator__option-text">Техподдержка 1 месяц</span>
+              <span class="calculator__option-price">+5 000 ₽</span>
+            </label>
+            <label class="calculator__option">
+              <input type="checkbox" class="calc-option" data-price="8000">
+              <span class="calculator__option-text">Срочная разработка (3 дня)</span>
+              <span class="calculator__option-price">+8 000 ₽</span>
+            </label>
+          </div>
+        </div>
+        <div class="calculator__total">
+          <span class="calculator__total-label">Примерная стоимость:</span>
+          <span class="calculator__total-price" id="calc-total">15 000 ₽</span>
+        </div>
+        <button class="btn btn--primary open-modal-btn">Заказать расчёт</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== КАРТОЧКИ УСЛУГ ======== -->
+  <section class="section">
+    <div class="container">
+      <div class="services-grid">
+        <!-- Карточка 1 -->
+        <div class="service-card animate-in animate-in--1">
+          <div class="service-card__icon">🤖</div>
+          <h2 class="service-card__title">Telegram / WhatsApp бот</h2>
+          <div class="service-card__price">от 15 000 ₽</div>
+          <ul class="service-card__features">
+            <li class="service-card__feature">Приём и обработка заявок 24/7</li>
+            <li class="service-card__feature">Автоворонки и рассылки</li>
+            <li class="service-card__feature">Интеграция с CRM и платежами</li>
+            <li class="service-card__feature">Панель администратора</li>
+            <li class="service-card__feature">Размещение на сервере</li>
+          </ul>
+          <button class="btn btn--primary btn--small order-btn" data-service="Telegram/WhatsApp бот">Заказать услугу</button>
+        </div>
+        <!-- Карточка 2 -->
+        <div class="service-card animate-in animate--2">
+          <div class="service-card__icon">📊</div>
+          <h2 class="service-card__title">Парсинг / Краулер</h2>
+          <div class="service-card__price">от 25 000 ₽</div>
+          <ul class="service-card__features">
+            <li class="service-card__feature">Сбор данных с любых сайтов</li>
+            <li class="service-card__feature">Маркетплейсы (WB, Ozon, Яндекс)</li>
+            <li class="service-card__feature">Выгрузка в Excel / Google Sheets</li>
+            <li class="service-card__feature">Автообновление по расписанию</li>
+            <li class="service-card__feature">Поддержка прокси и антиблокировка</li>
+          </ul>
+          <button class="btn btn--primary btn--small order-btn" data-service="Парсинг данных">Заказать услугу</button>
+        </div>
+        <!-- Карточка 3 -->
+        <div class="service-card animate-in animate--3">
+          <div class="service-card__icon">🌐</div>
+          <h2 class="service-card__title">Сайт под ключ</h2>
+          <div class="service-card__price">от 30 000 ₽</div>
+          <ul class="service-card__features">
+            <li class="service-card__feature">Landing Page / Корпоративный сайт</li>
+            <li class="service-card__feature">Адаптивный дизайн (Mobile First)</li>
+            <li class="service-card__feature">SEO-оптимизация</li>
+            <li class="service-card__feature">Интеграция AI-ассистента</li>
+            <li class="service-card__feature">Хостинг + домен в подарок</li>
+          </ul>
+          <button class="btn btn--primary btn--small order-btn" data-service="Сайт под ключ">Заказать услугу</button>
+        </div>
+        <!-- Карточка 4 -->
+        <div class="service-card animate-in animate--4">
+          <div class="service-card__icon">⚡</div>
+          <h2 class="service-card__title">Комплексная автоматизация</h2>
+          <div class="service-card__price">от 60 000 ₽</div>
+          <ul class="service-card__features">
+            <li class="service-card__feature">Аудит бизнес-процессов</li>
+            <li class="service-card__feature">Сайт + бот + парсинг в одном</li>
+            <li class="service-card__feature">Сквозная аналитика</li>
+            <li class="service-card__feature">Интеграция с 1С / CRM</li>
+            <li class="service-card__feature">Техподдержка 1 месяц</li>
+          </ul>
+          <button class="btn btn--primary btn--small order-btn" data-service="Комплексная автоматизация">Заказать услугу</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== ФУТЕР ======== -->
+  <footer class="footer" id="consultation">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">N</div>
+            <div>Next<span>Gen</span></div>
+          </a>
+          <p class="footer__desc">
+            Агентство по автоматизации бизнеса и внедрению нейросетей.
+            Разработка ботов, парсеров и сайтов под ключ.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Навигация</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Главная</a></li>
+            <li><a href="services.html" class="footer__link">Услуги</a></li>
+            <li><a href="portfolio.html" class="footer__link">Портфолио</a></li>
+            <li><a href="blog.html" class="footer__link">Блог</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Контакты</h4>
+          <ul class="footer__links">
+            <li><span class="footer__link">info@nextgen-ai.ru</span></li>
+            <li><span class="footer__link">+7 (999) 123-45-67</span></li>
+            <li><span class="footer__link">Telegram: @nextgen_ai</span></li>
+          </ul>
+        </div>
+        <div class="footer-form">
+          <h4 class="footer-form__title">Получить бесплатную консультацию</h4>
+          <p class="footer-form__desc">Оставьте заявку — мы свяжемся в течение часа</p>
+          <form class="form" id="consult-form">
+            <div class="form__group">
+              <label class="form__label" for="name">Ваше имя</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Александр" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="phone">Телефон</label>
+              <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="service">Какая услуга интересует?</label>
+              <select class="form__select" id="service" name="service">
+                <option value="Telegram/WhatsApp бот">Telegram / WhatsApp бот</option>
+                <option value="Парсинг данных">Парсинг / Краулер</option>
+                <option value="Сайт под ключ">Сайт под ключ</option>
+                <option value="Другое">Другое</option>
+              </select>
+            </div>
+            <button class="btn btn--primary form__submit" type="submit">Отправить заявку</button>
+          </form>
+          <div class="form__success" id="form-success">
+            <div class="form__success-icon">✅</div>
+            <div class="form__success-title">Спасибо за заявку!</div>
+            <div class="form__success-text">Мы свяжемся с вами в ближайшее время.</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 NextGen AI. Все права защищены.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======== МОДАЛЬНОЕ ОКНО ======== -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <button class="modal__close" id="modal-close">✕</button>
+      <h3 class="modal__title">Заказ услуги</h3>
+      <p class="modal__desc">Заполните форму — мы свяжемся с вами в ближайшее время</p>
+      <form class="form" id="modal-form">
+        <div class="form__group">
+          <label class="form__label" for="modal-name">Ваше имя</label>
+          <input class="form__input" type="text" id="modal-name" placeholder="Александр" required>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="modal-phone">Телефон</label>
+          <input class="form__input" type="tel" id="modal-phone" placeholder="+7 (999) 123-45-67" required>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="modal-service">Услуга</label>
+          <select class="form__select" id="modal-service">
+            <option value="Telegram/WhatsApp бот">Telegram / WhatsApp бот</option>
+            <option value="Парсинг данных">Парсинг / Краулер</option>
+            <option value="Сайт под ключ">Сайт под ключ</option>
+            <option value="Комплексная автоматизация">Комплексная автоматизация</option>
+          </select>
+        </div>
+        <button class="btn btn--primary form__submit" type="submit">Отправить заявку</button>
+      </form>
+      <div class="form__success" id="modal-success">
+        <div class="form__success-icon">✅</div>
+        <div class="form__success-title">Спасибо за заявку!</div>
+        <div class="form__success-text">Мы свяжемся с вами в ближайшее время.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== КНОПКА НАВЕРХ ======== -->
+  <button class="scroll-top" id="scroll-top" aria-label="Наверх">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

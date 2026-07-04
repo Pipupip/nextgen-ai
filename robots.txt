@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nextgenai6767.netlify.app/sitemap.xml

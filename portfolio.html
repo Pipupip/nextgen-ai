@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио — NextGen AI</title>
+  <meta name="description" content="Реальные проекты: Telegram-боты, парсеры данных, сайты с AI-интеграцией. Кейсы NextGen AI.">
+  <meta name="google-site-verification" content="5R5VbEmm2n74LcDH_hMLKXL2e5o9t02qzC8g4OUq7aQ">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======== ПРЕЛОАДЕР ======== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__logo">N</div>
+    <div class="preloader__bar"><div class="preloader__bar-fill"></div></div>
+  </div>
+
+  <!-- ======== ХЕДЕР ======== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">N</div>
+        <div>Next<span>Gen</span></div>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Главная</a></li>
+          <li><a href="services.html" class="nav__link">Услуги</a></li>
+          <li><a href="portfolio.html" class="nav__link nav__link--active">Портфолио</a></li>
+          <li><a href="blog.html" class="nav__link">Блог</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======== ЗАГОЛОВОК ======== -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Главная</a>
+        <span class="breadcrumbs__sep">/</span>
+        <span class="breadcrumbs__current">Портфолио</span>
+      </div>
+      <h1 class="page-header__title">Наши проекты</h1>
+      <p class="page-header__desc">Реальные кейсы автоматизации для бизнеса разного уровня</p>
+    </div>
+  </section>
+
+  <!-- ======== ПОРТФОЛИО ======== -->
+  <section class="section">
+    <div class="container">
+      <div class="portfolio-filter">
+        <button class="portfolio-filter__btn portfolio-filter__btn--active" data-filter="all">Все проекты</button>
+        <button class="portfolio-filter__btn" data-filter="bot">Боты</button>
+        <button class="portfolio-filter__btn" data-filter="parsing">Парсинг</button>
+        <button class="portfolio-filter__btn" data-filter="web">Сайты</button>
+        <button class="portfolio-filter__btn" data-filter="automation">Автоматизация</button>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal" data-category="bot">
+          <div class="portfolio-card__image" style="background: linear-gradient(135deg, #1e3a5f, #3b82f6);">🤖</div>
+          <div class="portfolio-card__body">
+            <span class="portfolio-card__category">Бот</span>
+            <h3 class="portfolio-card__title">Telegram-бот для сети кофеен</h3>
+            <p class="portfolio-card__desc">Приём заказов, интеграция с CRM, автоворонка лояльности. 3 000+ пользователей за месяц.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal reveal--delay-1" data-category="parsing">
+          <div class="portfolio-card__image" style="background: linear-gradient(135deg, #3b0764, #8b5cf6);">📊</div>
+          <div class="portfolio-card__body">
+            <span class="portfolio-card__category">Парсинг</span>
+            <h3 class="portfolio-card__title">Мониторинг Wildberries</h3>
+            <p class="portfolio-card__desc">Ежедневный сбор цен и остатков 50 000 товаров. Выгрузка в Google Sheets с автообновлением.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal reveal--delay-2" data-category="web">
+          <div class="portfolio-card__image" style="background: linear-gradient(135deg, #0e7490, #06b6d4);">🌐</div>
+          <div class="portfolio-card__body">
+            <span class="portfolio-card__category">Сайт</span>
+            <h3 class="portfolio-card__title">Корпоративный сайт с AI-чатом</h3>
+            <p class="portfolio-card__desc">Лендинг + ИИ-ассистент на базе GPT. Конверсия в заявку выросла на 40%.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal reveal--delay-3" data-category="automation">
+          <div class="portfolio-card__image" style="background: linear-gradient(135deg, #3730a3, #6366f1);">⚡</div>
+          <div class="portfolio-card__body">
+            <span class="portfolio-card__category">Автоматизация</span>
+            <h3 class="portfolio-card__title">CRM + Telegram + 1С</h3>
+            <p class="portfolio-card__desc">Сквозная автоматизация: заявка из Telegram → CRM → 1С. Обработка лидов за 2 секунды.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal reveal--delay-1" data-category="parsing">
+          <div class="portfolio-card__image" style="background: linear-gradient(135deg, #1e3a5f, #3b82f6);">📈</div>
+          <div class="portfolio-card__body">
+            <span class="portfolio-card__category">Парсинг</span>
+            <h3 class="portfolio-card__title">Аналитика Ozon для бренда</h3>
+            <p class="portfolio-card__desc">Парсинг карточек товаров, отзывов и цен конкурентов. Дашборд в DataLens.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal reveal--delay-2" data-category="bot">
+          <div class="portfolio-card__image" style="background: linear-gradient(135deg, #3b0764, #8b5cf6);">💬</div>
+          <div class="portfolio-card__body">
+            <span class="portfolio-card__category">Бот</span>
+            <h3 class="portfolio-card__title">WhatsApp-бот для техподдержки</h3>
+            <p class="portfolio-card__desc">Автоматическая обработка 80% типовых обращений. Интеграция с базой знаний компании.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== ФУТЕР ======== -->
+  <footer class="footer" id="consultation">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">N</div>
+            <div>Next<span>Gen</span></div>
+          </a>
+          <p class="footer__desc">Агентство по автоматизации бизнеса и внедрению нейросетей. Разработка ботов, парсеров и сайтов под ключ.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Навигация</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Главная</a></li>
+            <li><a href="services.html" class="footer__link">Услуги</a></li>
+            <li><a href="portfolio.html" class="footer__link">Портфолио</a></li>
+            <li><a href="blog.html" class="footer__link">Блог</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Контакты</h4>
+          <ul class="footer__links">
+            <li><span class="footer__link">info@nextgen-ai.ru</span></li>
+            <li><span class="footer__link">+7 (999) 123-45-67</span></li>
+            <li><span class="footer__link">Telegram: @nextgen_ai</span></li>
+          </ul>
+        </div>
+        <div class="footer-form">
+          <h4 class="footer-form__title">Получить бесплатную консультацию</h4>
+          <p class="footer-form__desc">Оставьте заявку — мы свяжемся в течение часа</p>
+          <form class="form" id="consult-form">
+            <div class="form__group">
+              <label class="form__label" for="name">Ваше имя</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Александр" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="phone">Телефон</label>
+              <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="service">Какая услуга интересует?</label>
+              <select class="form__select" id="service" name="service">
+                <option value="Telegram/WhatsApp бот">Telegram / WhatsApp бот</option>
+                <option value="Парсинг данных">Парсинг / Краулер</option>
+                <option value="Сайт под ключ">Сайт под ключ</option>
+                <option value="Другое">Другое</option>
+              </select>
+            </div>
+            <button class="btn btn--primary form__submit" type="submit">Отправить заявку</button>
+          </form>
+          <div class="form__success" id="form-success">
+            <div class="form__success-icon">✅</div>
+            <div class="form__success-title">Спасибо за заявку!</div>
+            <div class="form__success-text">Мы свяжемся с вами в ближайшее время.</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">&copy; 2026 NextGen AI. Все права защищены.</div>
+    </div>
+  </footer>
+
+  <!-- ======== МОДАЛЬНОЕ ОКНО ======== -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <button class="modal__close" id="modal-close">✕</button>
+      <h3 class="modal__title">Заказ услуги</h3>
+      <p class="modal__desc">Заполните форму — мы свяжемся с вами в ближайшее время</p>
+      <form class="form" id="modal-form">
+        <div class="form__group">
+          <label class="form__label" for="modal-name">Ваше имя</label>
+          <input class="form__input" type="text" id="modal-name" placeholder="Александр" required>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="modal-phone">Телефон</label>
+          <input class="form__input" type="tel" id="modal-phone" placeholder="+7 (999) 123-45-67" required>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="modal-service">Услуга</label>
+          <select class="form__select" id="modal-service">
+            <option value="Telegram/WhatsApp бот">Telegram / WhatsApp бот</option>
+            <option value="Парсинг данных">Парсинг / Краулер</option>
+            <option value="Сайт под ключ">Сайт под ключ</option>
+            <option value="Комплексная автоматизация">Комплексная автоматизация</option>
+          </select>
+        </div>
+        <button class="btn btn--primary form__submit" type="submit">Отправить заявку</button>
+      </form>
+      <div class="form__success" id="modal-success">
+        <div class="form__success-icon">✅</div>
+        <div class="form__success-title">Спасибо за заявку!</div>
+        <div class="form__success-text">Мы свяжемся с вами в ближайшее время.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== КНОПКА НАВЕРХ ======== -->
+  <button class="scroll-top" id="scroll-top" aria-label="Наверх">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
